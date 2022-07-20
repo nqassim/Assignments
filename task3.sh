@@ -19,6 +19,6 @@ JOIN customers ON invoices.CustomerId = customers.CustomerId
 JOIN albums ON albums.AlbumId = tracks.AlbumId
 JOIN artists ON artists.ArtistId = albums.ArtistId
 WHERE invoices.InvoiceDate >= '$counter-01-01 00:00:00' 
- AND  invoices.InvoiceDate <  '$counter+1-01-01 00:00:00" >> invoices_$counter.csv
+ AND  invoices.InvoiceDate <  '$(counter+1)-01-01 00:00:00" >> invoices_$counter.csv
 ((counter++))
 done
