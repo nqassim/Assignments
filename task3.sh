@@ -7,7 +7,7 @@ if ! command -v psql > /dev/null ; then
   exit 1
 fi
 
-psql postrgres
+psql
 /c chinook
 counter=2009
 while [ $counter -le 2013 ]
